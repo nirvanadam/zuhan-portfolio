@@ -1,0 +1,161 @@
+.cv-container {
+    position: relative;
+    padding: 20px 15px;
+}
+
+.cv-container>h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 16px;
+    border-bottom: 2px dotted lightgray;
+    margin-bottom: 36px;
+
+}
+
+/* -------------------- About-Experience  -------------------- */
+.about-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 48px;
+    border-bottom: 2px dotted lightgray;
+    margin-bottom: 36px;
+}
+
+.about-container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-container>p {
+    font-size: 16px;
+}
+
+.experience-container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.experience-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.experience-item>h1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.experience-item>p {
+    font-size: 14px;
+    color: gray;
+    /* font-weight: 500; */
+}
+
+/* -------------------- About-Experience End -------------------- */
+
+/* -------------------- Info-Skill-Section -------------------- */
+.info-skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 48px;
+    border-bottom: 2px dotted lightgray;
+    margin-bottom: 36px;
+}
+
+.info-container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.info-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.skill-container>ul> {
+    margin-left: 20px;
+    background-color: aqua;
+    padding: 50px;
+}
+
+.skill-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* -------------------- Info-Skill-Section End -------------------- */
+
+@media screen and (min-width: 768px) {
+    .cv-container {
+        padding: 50px 40px;
+    }
+
+    .cv-container>h1 {
+        font-size: 48px;
+    }
+
+    .about-container>p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .cv-container {
+        padding: 50px 100px;
+    }
+
+    .about-experience-container {
+        flex-direction: row-reverse;
+    }
+
+    .about-container {
+        flex: 1;
+    }
+
+    .experience-container {
+        flex: 1;
+    }
+
+    .info-skill-container {
+        flex-direction: row;
+    }
+
+    .info-container {
+        flex: 1;
+    }
+
+    .skill-container {
+        flex: 1;
+    }
+
+    .skill-item-container {
+        gap: 12px;
+    }
+}
+
+/* Personal Info End */

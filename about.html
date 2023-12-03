@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/about.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-container">
+        <a href="index.html" class="logo">zuhan.</a>
+        <button id="menuButton" class="nav-button">
+            <div id="line1" class="line 1"></div>
+            <div id="line2" class="line 2"></div>
+            <div id="line3" class="line 3"></div>
+        </button>
+
+        <!-- Menu Mobile -->
+        <div id="menuMobile" class="menu-container-mobile">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="cv.html">CV</a>
+            <a class="contact" href="contact.html">LETS TALK</a>
+        </div>
+        <!-- Menu Mobile End -->
+
+        <!-- Menu Desktop -->
+        <div id="menuDesktop" class="menu-container-desktop">
+            <a class="menu" href="index.html">HOME</a>
+            <a class="menu" href="about.html">ABOUT</a>
+            <a class="menu" href="cv.html">CV</a>
+            <a class="contact" href="contact.html">LETS TALK</a>
+        </div>
+        <!-- Menu Desktop End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- About Section -->
+    <div class="about-container">
+        <div id="cover" class="cover"></div>
+        <div class="profile-image-container"></div>
+
+        <div class="content-container">
+            <h1 class="header">
+                I'm Zuhan a <span>Web Designer</span> based in Yogyakarta.
+            </h1>
+            <p class="description">Hai, saya Zuhan, seorang siswa kelas 12 di MAN 3 Sleman Yogyakarta. Saya penuh
+                semangat dalam
+                mengejar impian dan
+                berdedikasi tinggi terhadap ilmu pengetahuan. Selain fokus pada prestasi akademis, saya aktif di
+                berbagai kegiatan
+                ekstrakurikuler untuk pengembangan diri. Dengan keinginan kuat untuk terus berkembang, saya
+                mengundang Anda untuk
+                menjelajahi perjalanan inspiratif saya melalui website portfolio ini. Selamat menikmati!</p>
+        </div>
+
+        <div class="social-container">
+            <a class="sosmed" href="#">
+                <img src="icons/instagram.svg" alt="" width="18px">
+            </a>
+            <a class="sosmed" href="#">
+                <img src="icons/facebook.svg" alt="" width="18px">
+            </a>
+            <a class="sosmed" href="#">
+                <img src="icons/twitter.svg" alt="" width="18px">
+            </a>
+
+            <a class="contact" href="">GET IN TOUCH</a>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Script -->
+    <script>
+        const cover = document.getElementById('cover')
+        const menuButton = document.getElementById('menuButton');
+        const menuMobile = document.getElementById('menuMobile');
+        const line1 = document.getElementById('line1')
+        const line2 = document.getElementById('line2')
+        const line3 = document.getElementById('line3')
+
+        let showMenuStatus = false;
+
+        function showMenu() {
+            if (showMenuStatus) {
+                cover.style.opacity = '0.6'
+                cover.style.zIndex = '1'
+                menuMobile.style.top = '75px';
+                menuMobile.style.opacity = '1';
+                line1.style.rotate = '38deg'
+                line1.style.transitionDelay = '300ms'
+                line3.style.rotate = '-38deg'
+                line3.style.transitionDelay = '300ms'
+                line2.style.transform = 'scaleX(0)'
+            } else {
+                cover.style.opacity = '0'
+                cover.style.zIndex = '-3'
+                menuMobile.style.top = '-224px';
+                menuMobile.style.opacity = '0'
+                line1.style.rotate = '0deg'
+                line1.style.transitionDelay = '300ms'
+                line3.style.rotate = '0deg'
+                line3.style.transitionDelay = '300ms'
+                line2.style.transform = 'scaleX(1)'
+                line2.style.transitionDelay = '300ms'
+            }
+
+            showMenuStatus = !showMenuStatus;
+        }
+
+        menuButton.addEventListener('click', showMenu);
+    </script>
+    <!-- Script End -->
+</body>
+
+</html>
