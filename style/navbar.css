@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    z-index: 999;
+    z-index: 10;
 }
 
 .navbar-container .logo {
@@ -62,7 +62,7 @@
     border-radius: 6px;
     transition: 700ms;
     opacity: 0;
-    z-index: 998;
+    z-index: 10;
 }
 
 .menu-container-mobile a {
@@ -119,6 +119,10 @@
     .menu-container-desktop .contact:hover {
         background-color: transparent;
         color: #c0713e;
+    }
+
+    .menu-container-mobile {
+        display: none;
     }
 }
 
