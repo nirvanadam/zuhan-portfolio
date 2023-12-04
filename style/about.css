@@ -69,11 +69,16 @@
     padding: 10px 20px;
     color: white;
     margin-left: 12px;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
     .about-container {
         padding: 30px 70px;
+    }
+
+    .social-container .contact {
+        font-size: 16px;
     }
 }
 
